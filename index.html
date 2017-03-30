@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>JMJ Config Merger</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.8.3/underscore-min.js"></script>
+    <script src="merger.js"></script>
+    <style>
+
+    </style>
+</head>
+
+<body>
+    <div class="container-fluid">
+        <div class="row content">
+            <div class="col-sm-5">
+                <h4>Config 1</h4>
+                <textarea id="config1" class="col-sm-12" autocomplete="off" role="textbox" aria-autocomplete="list" aria-haspopup="true"></textarea>
+            </div>
+            <div class="col-sm-2" style="text-align:center">Action
+                <br/>
+                <div class="row">
+                    <br/>
+                    <div class="col-ls-12">
+                        <button class="btn btn-warning" type="button" onclick="merge()">Merge</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-5">
+                <h4 style="text-align:right">Config 2</h4>
+                <textarea id="config2" class="col-sm-12" autocomplete="off" role="textbox" aria-autocomplete="list" aria-haspopup="true"></textarea>
+            </div>
+        </div>
+    </div>
+    <div>
+        <div class="container-fluid">
+            <h4 style="text-align:center">Merged</h4> <span id="diff" style="text-align:center"></span> <pre id="mergedConfig">
+    
+    </pre> </div>
+    </div>
+</body>
+
+</html>
